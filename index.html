@@ -12,15 +12,15 @@
 
    
 <body style='margin : 0px; overflow: hidden;'>
- <H2>1.7</h2>
+ <H2>1.8</h2>
   <a-scene 
            vr-mode-ui="enabled: false;"
            renderer="logarithmicDepthBuffer: true;"
            embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
            >
       
-    <!-- create your content here. just a box for now -->
-    <a-box position='0.5 0.5 0.5' material='opacity: 0.5;'></a-box>
+    <!-- create your content here. just a box for now 
+    <a-box position='0.5 0.5 0.5' material='opacity: 0.5;'></a-box>  -->
    
    <a-nft
         type="nft"
@@ -37,11 +37,11 @@
           >
           </a-entity>
       </a-nft>
-   
+   <a-entity camera></a-entity>
    
 <!-- <a-entity gltf-model="##drone"></a-entity>-->
-    <!-- define a camera which will move according to the marker position -->
-    <a-marker-camera preset='hiro'></a-marker-camera>
+    <!-- define a camera which will move according to the marker position 
+    <a-marker-camera preset='hiro'></a-marker-camera> -->
   </a-scene>
   </body>
 </html>
